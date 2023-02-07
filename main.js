@@ -2,37 +2,50 @@ let num1 = 50, num2 = 32;
 let resultado;
 let mystyle ="background: #0c690c;color:#fff;font-family: sans-serif; padding: 5px; border: 2px solid #0c6963;";
 
-//Operador de Suma
-resultado = num1 + num2;
-console.log(`%c${num1} + ${num2} = ${resultado}`, mystyle);
+//Libreria Matemática Math
+//Mat.ceil()
+//Devuelve el numero entero superior al numero escrito
+console.log(Math.ceil(2.087));
+console.log(Math.ceil(2.95));
 
-//Operador de Resta
-resultado = num1 - num2;
-console.log(`${num1} - ${num2} = ${resultado}`);
+//Mat.floor()
+//Devuelve el numero entero superior al numero escrito
+console.log(Math.ceil(4.097));
+console.log(Math.ceil(4.972));
 
-//Operador de Division
-resultado = num1/num2;
-console.log(`${num1} / ${num2} = ${resultado}`);
+//Mat.max()
+//Devuelve el numero mas grande de un grupo de numeros dados
+console.log(Math.max(6,35,2,94,8));
 
-//Operador de Exponenciacion
-num2 = 4;
-resultado = num1 ** num2;
-console.log(`${num1} ** ${num2} = ${resultado}`);
+//Mat.min()
+//Devuelve el numero mas pequño de un grupo de numeros dados
+console.log(Math.min(6,35,2,94,8));
 
-//Operador de Multiplicacion
-num2 = 32;
-resultado = num1 * num2;
-console.log(`${num1} * ${num2} = ${resultado}`);
+//Mat.pow()
+//Devuelve el valor de elevar un numero base aun un exponente
+console.log(Math.pow(3, 6));
 
-//Operador de Modulo o Residuo
-resultado = num1 % num2;
-console.log(`${num1} % ${num2} = ${resultado}`);
+//Mat.random()
+//Devuelve un numero aleatorio entre 0 y 1
+console.log(Math.random());
+//Si quiero numeros entre 0 y 100
+console.log(Math.random()*100);
 
-//Operador de Unary Negation
-resultado = -num1;
-console.log(`Negativo de ${num1} = ${resultado}`);
+//Mat.round()
+//Redondea un valor al numero entero mas proximo
+console.log(Math.round(3.158));
+console.log(Math.round(3.623));
 
-//Operador de Unary Pluss
-num2 = -32
-resultado = +num2;
-console.log(`Positivo de ${num2} = ${resultado}`);
+//Mat.trunc()
+//Trunca un valor dejando solo la parte entera
+console.log(Math.trunc(3.158));
+console.log(Math.trunc(3.623));
+
+//Mat.sqrt()
+//Devuelve la raiz cuadrada de un numero
+console.log(Math.sqrt(358));
+
+//xxx.toFixed() 
+//Devuelve un numero redondeandolo de acuerdo a una cantidad de decimales que deseo
+console.log(365987.125485.toFixed(3));
+console.log(365987.125612.toFixed(3));
