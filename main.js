@@ -1,26 +1,16 @@
-let num1 = 50, num2 = 32;
-let resultado;
-let mystyle ="background: #0c690c;color:#fff;font-family: sans-serif; padding: 5px; border: 2px solid #0c6963;";
+// Operadores lógicos 
 
-//Equality
-console.log(`%c${num1} == ${num2} ${num1==num2}`,mystyle);
-//Inequality
-console.log(`%c${num1} != ${num2} ${num1!=num2}`,mystyle);
+// Los Operadores lógicos  nos devuelve un resultado a 
+// partir de que se cumpla (o no) una condición, 
+// su resultado es Booleano, y sus operandos son 
+// valores lógicos o asimilables a ellos
 
-//Identity
-console.log(`%c${num1} === ${num2} ${num1===num2}`,mystyle);
+let a = confirm("Variable A\n\t\tSeleciona Aceptar si deseas el boleano True\n\t\tSeleciona Cancelar si deseas el boleano False")
+let b = confirm("Variable B\n\t\tSeleciona Aceptar si deseas el boleano True\n\t\tSeleciona Cancelar si deseas el boleano False")
 
-//Non-identity
-console.log(`%c${num1} !== ${num2} ${num1!==num2}`,mystyle);
-
-//Mayor que
-console.log(`%c${num1} > ${num2} ${num1>num2}`,mystyle);
-
-//Mayor o Igual que
-console.log(`%c${num1} >= ${num2} ${num1>=num2}`,mystyle);
-
-//Menor que
-console.log(`%c${num1} < ${num2} ${num1<num2}`,mystyle);
-
-//Menor o igual que
-console.log(`%c${num1} <= ${num2} ${num1<=num2}`,mystyle);
+let cuerpo = document.querySelector("#myAND");
+cuerpo.insertAdjacentHTML("beforeend", ` <tr>
+                                            <td>${a}</td>
+                                            <td>${b}</td>
+                                            <td>${a && b}</td>
+                                        </tr>`);
